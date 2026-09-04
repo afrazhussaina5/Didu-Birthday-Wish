@@ -1,0 +1,1837 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Didu ❤️</title>
+
+<style>
+
+/* =========================================================
+   GOOGLE FONTS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================================
+   BASIC RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background:
+        linear-gradient(
+            135deg,
+            #061735,
+            #102b55,
+            #45264f,
+            #122d52
+        );
+
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   BACKGROUND LIGHT EFFECTS
+========================================================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(255, 120, 190, 0.18),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(70, 180, 255, 0.18),
+            transparent 30%
+        );
+
+    pointer-events: none;
+    z-index: -2;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 18px 6%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    z-index: 100;
+
+    background: rgba(4, 17, 40, 0.70);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.10);
+}
+
+
+.logo {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 30px;
+
+    color: #ffb7df;
+
+}
+
+
+.navbar a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+
+}
+
+
+.navbar a:hover {
+
+    color: #ff9fd5;
+
+}
+
+
+/* =========================================================
+   FULL SCREEN PAGES
+========================================================= */
+
+.page {
+
+    min-height: 100vh;
+
+    padding:
+        110px
+        8%
+        70px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+}
+
+
+.container {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   FALLING FLOWERS
+========================================================= */
+
+.petal {
+
+    position: fixed;
+
+    top: -50px;
+
+    pointer-events: none;
+
+    z-index: 20;
+
+    animation:
+        fall linear infinite;
+
+}
+
+
+@keyframes fall {
+
+    0% {
+
+        transform:
+            translateY(-50px)
+            rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    10% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(110vh)
+            rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =========================================================
+   FLOATING DECORATIVE FLOWERS
+========================================================= */
+
+.flower {
+
+    position: absolute;
+
+    font-size: 65px;
+
+    animation:
+        floatingFlower 5s ease-in-out infinite;
+
+    pointer-events: none;
+
+}
+
+
+.flower.one {
+
+    top: 15%;
+
+    left: 5%;
+
+}
+
+
+.flower.two {
+
+    right: 5%;
+
+    bottom: 12%;
+
+    animation-delay: 1s;
+
+}
+
+
+.flower.three {
+
+    right: 10%;
+
+    top: 25%;
+
+    font-size: 45px;
+
+    animation-delay: 2s;
+
+}
+
+
+.flower.four {
+
+    left: 10%;
+
+    bottom: 15%;
+
+    font-size: 45px;
+
+    animation-delay: 1.5s;
+
+}
+
+
+@keyframes floatingFlower {
+
+    0%,100% {
+
+        transform:
+            translateY(0)
+            rotate(-5deg);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-25px)
+            rotate(8deg);
+
+    }
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.small-title {
+
+    color: #a9d9ff;
+
+    letter-spacing: 5px;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size:
+        clamp(
+            65px,
+            10vw,
+            125px
+        );
+
+    line-height: 0.95;
+
+    background:
+        linear-gradient(
+            90deg,
+            #9edcff,
+            #ffb5dd,
+            #ffffff
+        );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+    animation:
+        glow 3s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes glow {
+
+    from {
+
+        filter:
+            drop-shadow(
+                0 0 10px
+                rgba(255,150,210,0.3)
+            );
+
+    }
+
+    to {
+
+        filter:
+            drop-shadow(
+                0 0 30px
+                rgba(120,190,255,0.7)
+            );
+
+    }
+
+}
+
+
+.hero h2 {
+
+    font-size:
+        clamp(
+            25px,
+            4vw,
+            48px
+        );
+
+    margin-top: 20px;
+
+    font-weight: 500;
+
+}
+
+
+.hero p {
+
+    max-width: 750px;
+
+    margin:
+        25px auto;
+
+    line-height: 1.9;
+
+    color: #d9eaff;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.btn {
+
+    display: inline-block;
+
+    padding:
+        14px
+        32px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            90deg,
+            #508fdc,
+            #e96cae
+        );
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.25);
+
+    transition: 0.4s;
+
+    margin-top: 20px;
+
+}
+
+
+.btn:hover {
+
+    transform:
+        translateY(-5px)
+        scale(1.03);
+
+    box-shadow:
+        0 15px 40px
+        rgba(236,111,178,0.35);
+
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section-title {
+
+    font-family:
+        'Dancing Script',
+        cursive;
+
+    font-size:
+        clamp(
+            45px,
+            7vw,
+            75px
+        );
+
+    color: #ffb7dc;
+
+    margin-bottom: 20px;
+
+}
+
+
+.subtitle {
+
+    color: #aedcff;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================================================
+   GLASS CARD
+========================================================= */
+
+.card {
+
+    background:
+        rgba(255,255,255,0.08);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.15);
+
+    backdrop-filter:
+        blur(18px);
+
+    border-radius: 25px;
+
+    padding: 45px;
+
+    box-shadow:
+        0 25px 60px
+        rgba(0,0,0,0.25);
+
+}
+
+
+.card p {
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    color: #e6f2ff;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =========================================================
+   URDU / ROMAN URDU
+========================================================= */
+
+.urdu {
+
+    font-family:
+        'Dancing Script',
+        cursive;
+
+    color: #ffc0e1;
+
+    font-size:
+        clamp(
+            25px,
+            4vw,
+            38px
+        );
+
+    line-height: 1.6;
+
+    margin: 30px auto;
+
+}
+
+
+.urdu-small {
+
+    font-family:
+        'Dancing Script',
+        cursive;
+
+    color: #aeddff;
+
+    font-size: 25px;
+
+    margin-top: 15px;
+
+}
+
+
+/* =========================================================
+   SPECIAL CARDS
+========================================================= */
+
+.special-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 20px;
+
+    margin-top: 35px;
+
+}
+
+
+.special-card {
+
+    padding: 30px 20px;
+
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,0.07);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.13);
+
+    transition: 0.4s;
+
+}
+
+
+.special-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    background:
+        rgba(255,255,255,0.12);
+
+}
+
+
+.special-card .icon {
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.special-card h3 {
+
+    color: #ffb4db;
+
+    margin-bottom: 12px;
+
+}
+
+
+.special-card p {
+
+    color: #d9eaff;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.quote {
+
+    font-family:
+        'Dancing Script',
+        cursive;
+
+    font-size:
+        clamp(
+            30px,
+            5vw,
+            52px
+        );
+
+    line-height: 1.5;
+
+    color: white;
+
+    margin:
+        30px auto;
+
+    max-width: 850px;
+
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.photo-frame {
+
+    width: 250px;
+
+    height: 250px;
+
+    margin:
+        25px auto;
+
+    border-radius: 50%;
+
+    padding: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7ac8ff,
+            #ff9dce
+        );
+
+    box-shadow:
+        0 0 50px
+        rgba(255,150,210,0.35);
+
+}
+
+
+.photo-frame img {
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+
+/* =========================================================
+   FINAL PAGE
+========================================================= */
+
+.final h1 {
+
+    font-family:
+        'Dancing Script',
+        cursive;
+
+    font-size:
+        clamp(
+            65px,
+            9vw,
+            110px
+        );
+
+    background:
+        linear-gradient(
+            90deg,
+            #a6dcff,
+            #ffacd8
+        );
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+}
+
+
+.final-message {
+
+    max-width: 750px;
+
+    margin:
+        25px auto;
+
+    line-height: 2;
+
+    color: #e5f3ff;
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+.heart {
+
+    position: fixed;
+
+    bottom: -30px;
+
+    font-size: 20px;
+
+    animation:
+        heartFloat 6s linear infinite;
+
+    pointer-events: none;
+
+    z-index: 10;
+
+}
+
+
+@keyframes heartFloat {
+
+    0% {
+
+        transform:
+            translateY(0)
+            scale(0.5);
+
+        opacity: 0;
+
+    }
+
+    20% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(-110vh)
+            scale(1.5);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #a9cce8;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:800px) {
+
+    .navbar {
+
+        padding:
+            15px 4%;
+
+    }
+
+
+    .navbar a {
+
+        margin-left: 10px;
+
+        font-size: 11px;
+
+    }
+
+
+    .logo {
+
+        font-size: 24px;
+
+    }
+
+
+    .page {
+
+        padding:
+            100px 5% 60px;
+
+    }
+
+
+    .card {
+
+        padding: 28px 20px;
+
+    }
+
+
+    .special-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .flower {
+
+        font-size: 40px;
+
+    }
+
+}
+
+
+@media(max-width:500px) {
+
+    .navbar a {
+
+        display: none;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 70px;
+
+    }
+
+
+    .section-title {
+
+        font-size: 48px;
+
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        For My Didu ❤️
+    </div>
+
+    <div>
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#special">
+            Special
+        </a>
+
+        <a href="#teacher">
+            Inspiration
+        </a>
+
+        <a href="#thanks">
+            Thank You
+        </a>
+
+        <a href="#final">
+            Birthday Wish
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     PAGE 1 — HERO
+===================================================== -->
+
+<section
+    class="page"
+    id="home"
+>
+
+
+    <div class="flower one">
+        🌸
+    </div>
+
+    <div class="flower two">
+        🌷
+    </div>
+
+    <div class="flower three">
+        🌺
+    </div>
+
+    <div class="flower four">
+        🌹
+    </div>
+
+
+    <div class="container hero">
+
+
+        <div class="small-title">
+
+            A Special Birthday Celebration
+
+        </div>
+
+
+        <h1>
+
+            Happy Birthday
+
+        </h1>
+
+
+        <h2>
+
+            To My Wonderful Didu 💖
+
+        </h2>
+
+
+        <p>
+
+            Today isn't just another birthday.
+
+            Today is a celebration of one of the most
+            beautiful, inspiring and important people
+            in my life.
+
+        </p>
+
+
+        <p>
+
+            Someone who has always been more than just
+            family — you have been my teacher, my guide,
+            my supporter, my inspiration and someone
+            I can always look up to.
+
+        </p>
+
+
+        <div class="urdu">
+
+            "Aap meri zindagi ka woh khoobsurat hissa hain,
+            jise main hamesha apne dil ke kareeb rakhunga."
+
+        </div>
+
+
+        <a
+            href="#special"
+            class="btn"
+        >
+
+            Discover Your Special Place ✨
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 2 — WHY SPECIAL
+===================================================== -->
+
+<section
+    class="page"
+    id="special"
+>
+
+
+    <div class="container">
+
+
+        <div class="subtitle">
+
+            You Are Truly Special
+
+        </div>
+
+
+        <div class="section-title">
+
+            Why You Mean So Much To Me 🌸
+
+        </div>
+
+
+        <div class="card">
+
+
+            <p>
+
+                Some people enter our lives and leave
+                beautiful memories.
+
+                Some people enter our lives and change
+                the way we see the world.
+
+            </p>
+
+
+            <p>
+
+                You are one of those rare people for me,
+                Didu.
+
+            </p>
+
+
+            <p>
+
+                Your kindness, patience, strength and
+                the way you always encourage people
+                around you make you incredibly special.
+
+            </p>
+
+
+            <p>
+
+                Whenever I needed someone to guide me,
+                you were there.
+
+                Whenever I felt confused, you helped me
+                find the right direction.
+
+                Whenever I doubted myself, you reminded
+                me that I could do better.
+
+            </p>
+
+
+            <p>
+
+                You have given me something much more
+                valuable than advice — you have given
+                me confidence, motivation and the belief
+                that I can become a better person.
+
+            </p>
+
+
+            <div class="urdu">
+
+                "Aapki dua, aapka saath aur aapki rehnumai
+                mere liye bohot khaas hai."
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="special-grid">
+
+
+            <div class="special-card">
+
+                <div class="icon">
+                    🌷
+                </div>
+
+                <h3>
+                    My Inspiration
+                </h3>
+
+                <p>
+
+                    Your life, your strength and your
+                    kindness inspire me to become a better
+                    person every day.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="special-card">
+
+                <div class="icon">
+                    📚
+                </div>
+
+                <h3>
+                    My Teacher
+                </h3>
+
+                <p>
+
+                    You have taught me lessons that go
+                    far beyond books — lessons about
+                    life, courage and kindness.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="special-card">
+
+                <div class="icon">
+                    💙
+                </div>
+
+                <h3>
+                    My Support
+                </h3>
+
+                <p>
+
+                    Knowing that someone like you believes
+                    in me gives me strength to keep moving
+                    forward.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 3 — TEACHER & GUIDE
+===================================================== -->
+
+<section
+    class="page"
+    id="teacher"
+>
+
+
+    <div class="container">
+
+
+        <div class="subtitle">
+
+            More Than A Teacher
+
+        </div>
+
+
+        <div class="section-title">
+
+            My Guide & Inspiration ✨
+
+        </div>
+
+
+        <div class="card">
+
+
+            <div class="quote">
+
+                "A great teacher doesn't just teach
+                lessons. A great teacher changes lives."
+
+            </div>
+
+
+            <p>
+
+                Didu, when I think about the people who
+                have made a difference in my life, your
+                name will always have a very special place.
+
+            </p>
+
+
+            <p>
+
+                You have taught me how important it is
+                to stay strong, keep learning, respect
+                others and never give up when things
+                become difficult.
+
+            </p>
+
+
+            <p>
+
+                The guidance you have given me has helped
+                shape the person I am becoming.
+
+            </p>
+
+
+            <p>
+
+                And what makes it even more special is
+                that you never made your support feel
+                like an obligation.
+
+                You gave it with love, patience and
+                genuine care.
+
+            </p>
+
+
+            <div class="urdu">
+
+                "Aap sirf meri teacher nahi,
+                meri zindagi ki ek behtareen rehnuma hain."
+
+            </div>
+
+
+            <p>
+
+                I may not always say it, but I truly
+                appreciate every piece of advice,
+                every encouraging word and every moment
+                you have spent helping me.
+
+            </p>
+
+
+            <p>
+
+                You are not just someone I respect.
+
+                You are someone I genuinely look up to.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 4 — THANK YOU
+===================================================== -->
+
+<section
+    class="page"
+    id="thanks"
+>
+
+
+    <div class="container">
+
+
+        <div class="subtitle">
+
+            From My Heart
+
+        </div>
+
+
+        <div class="section-title">
+
+            Thank You, Didu 💗
+
+        </div>
+
+
+        <!--
+        ===================================================
+        PHOTO
+
+        Put your photo in the same folder as this HTML
+        and name it:
+
+        didu.jpg
+
+        ===================================================
+        -->
+
+
+        <div class="photo-frame">
+
+            <img
+                src="didu.jpg"
+                alt="My Beautiful Didu"
+
+                onerror="
+                    this.style.display='none';
+
+                    this.parentElement.innerHTML='🌸';
+
+                    this.parentElement.style.fontSize='100px';
+
+                    this.parentElement.style.display='flex';
+
+                    this.parentElement.style.alignItems='center';
+
+                    this.parentElement.style.justifyContent='center';
+                "
+            >
+
+        </div>
+
+
+
+        <div class="card">
+
+
+            <p>
+
+                Thank you for every time you have
+                supported me.
+
+            </p>
+
+
+            <p>
+
+                Thank you for believing in me even when
+                I didn't believe in myself.
+
+            </p>
+
+
+            <p>
+
+                Thank you for every lesson, every
+                conversation, every piece of advice
+                and every little thing you have done
+                that has made a difference in my life.
+
+            </p>
+
+
+            <p>
+
+                Thank you for being the kind of person
+                who makes people around you feel valued,
+                respected and cared for.
+
+            </p>
+
+
+            <div class="urdu">
+
+                "Allah aapko hamesha khush rakhe,
+                aur aapki zindagi ko mohabbat,
+                sukoon aur khushiyon se bhar de."
+
+            </div>
+
+
+            <p>
+
+                I hope you know how deeply appreciated
+                you are.
+
+                There are some people who cannot be
+                replaced, and you are definitely one
+                of those people in my life.
+
+            </p>
+
+
+            <p>
+
+                I feel genuinely lucky and grateful
+                to have you as a part of my life.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 5 — FINAL BIRTHDAY WISH
+===================================================== -->
+
+<section
+    class="page final"
+    id="final"
+>
+
+
+    <div class="container">
+
+
+        <div class="small-title">
+
+            With Love & Gratitude
+
+        </div>
+
+
+        <h1>
+
+            Happy Birthday Didu! 🎂
+
+        </h1>
+
+
+        <div class="final-message">
+
+
+            <p>
+
+                On your special day, I wish you a life
+                filled with happiness, peace, beautiful
+                moments and everything your heart deserves.
+
+            </p>
+
+
+            <br>
+
+
+            <p>
+
+                May every dream you have come closer to
+                becoming reality.
+
+                May you always have reasons to smile,
+                people who love you and moments that
+                make your heart happy.
+
+            </p>
+
+
+            <br>
+
+
+            <p>
+
+                And I hope that I can make you proud
+                just as much as you have inspired me.
+
+            </p>
+
+
+            <br>
+
+
+            <div class="urdu">
+
+                "Allah aapki har dua qubool kare,
+                har mushkil ko aasaan kare,
+                aur aapki zindagi ko hamesha
+                khushiyon se roshan rakhe."
+
+            </div>
+
+
+            <br>
+
+
+            <p>
+
+                You are more than just my Didu.
+
+                You are my teacher, my guide,
+                my supporter, my inspiration,
+                and one of the most special people
+                in my life.
+
+            </p>
+
+
+            <br>
+
+
+            <p>
+
+                <strong>
+
+                    Thank you for being YOU. ❤️
+
+                </strong>
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="quote">
+
+            "Some people are gifts in our lives.
+
+            You are one of my greatest gifts."
+
+        </div>
+
+
+        <div class="urdu-small">
+
+            "Aap meri zindagi ki sabse khoobsurat
+            duaon mein se ek hain." ❤️
+
+        </div>
+
+
+        <a
+            href="#home"
+            class="btn"
+        >
+
+            Celebrate Again 🌸
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    Made with ❤️, gratitude & lots of love —
+    especially for my Didu.
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT — FALLING FLOWERS
+===================================================== -->
+
+<script>
+
+
+const flowers = [
+
+    "🌸",
+    "🌷",
+    "🌺",
+    "🌹",
+    "💮",
+    "🌼"
+
+];
+
+
+function createPetal() {
+
+
+    const petal =
+        document.createElement("div");
+
+
+    petal.classList.add("petal");
+
+
+    petal.innerHTML =
+        flowers[
+            Math.floor(
+                Math.random()
+                * flowers.length
+            )
+        ];
+
+
+    petal.style.left =
+        Math.random() * 100 + "vw";
+
+
+    petal.style.fontSize =
+        (15 + Math.random() * 20) + "px";
+
+
+    petal.style.animationDuration =
+        (5 + Math.random() * 8) + "s";
+
+
+    petal.style.animationDelay =
+        Math.random() * 5 + "s";
+
+
+    document.body.appendChild(petal);
+
+
+    setTimeout(() => {
+
+        petal.remove();
+
+    }, 14000);
+
+}
+
+
+setInterval(
+    createPetal,
+    500
+);
+
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+
+function createHeart() {
+
+
+    const heart =
+        document.createElement("div");
+
+
+    heart.classList.add("heart");
+
+
+    heart.innerHTML =
+        Math.random() > 0.5
+        ? "💗"
+        : "💙";
+
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 5) + "s";
+
+
+    document.body.appendChild(heart);
+
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    }, 10000);
+
+}
+
+
+setInterval(
+    createHeart,
+    1200
+);
+
+
+
+/* =====================================================
+   SMOOTH NAVIGATION
+===================================================== */
+
+
+document
+    .querySelectorAll(
+        'a[href^="#"]'
+    )
+    .forEach(link => {
+
+
+        link.addEventListener(
+            "click",
+            function(e) {
+
+
+                e.preventDefault();
+
+
+                const target =
+                    document.querySelector(
+                        this.getAttribute("href")
+                    );
+
+
+                if (target) {
+
+
+                    target.scrollIntoView({
+
+                        behavior:
+                            "smooth"
+
+                    });
+
+
+                }
+
+            }
+
+        );
+
+    });
+
+
+</script>
+
+
+</body>
+</html>
+```
